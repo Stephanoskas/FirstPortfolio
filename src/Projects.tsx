@@ -38,11 +38,12 @@ export default function Projects() {
     el.style.boxShadow = "none";
   };
 
+  // ✅ Updated image paths for GitHub Pages
   const projects = [
-    { to: "/projects/a", label: "Project A", img: "images/Logo.png", scale: "85%" },
-    { to: "/projects/b", label: "Project B", img: "images/vd.png", scale: "85%" },
-    { to: "/projects/c", label: "Project C", img: "images/100.png", scale: "100%" },
-    { to: "/projects/d", label: "Project D", img: "images/bbb.png", scale: "100%" },
+    { to: "/projects/a", label: "Project A", img: `${import.meta.env.BASE_URL}images/Logo.png`, scale: "85%" },
+    { to: "/projects/b", label: "Project B", img: `${import.meta.env.BASE_URL}images/vd.png`, scale: "85%" },
+    { to: "/projects/c", label: "Project C", img: `${import.meta.env.BASE_URL}images/100.png`, scale: "100%" },
+    { to: "/projects/d", label: "Project D", img: `${import.meta.env.BASE_URL}images/bbb.png`, scale: "100%" },
   ];
 
   return (
