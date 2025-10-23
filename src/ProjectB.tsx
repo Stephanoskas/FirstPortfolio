@@ -27,7 +27,7 @@ export default function ProjectB() {
         {/* Left - Logo */}
         <div style={{ flex: "1 1 300px", textAlign: "center" }}>
           <img
-            src="/images/icn.png"
+            src={`${import.meta.env.BASE_URL}images/icn.png`}
             alt="Project Logo"
             style={{
               width: "100%",
@@ -40,17 +40,17 @@ export default function ProjectB() {
 
         {/* Right - Text */}
         <div style={{ flex: "1 1 500px", textAlign: "left" }}>
-          <h1 style={{ fontSize: "2.4rem", marginBottom: "20px" }}>Project A</h1>
+          <h1 style={{ fontSize: "2.4rem", marginBottom: "20px" }}>Project B</h1>
           <p style={{ lineHeight: "1.7", fontSize: "1.2rem" }}>
-           I designed a logo, business card, and website layout for the Independent Cyprus Network, focusing on establishing a strong and cohesive visual identity.
-
-The project aimed to create a modern and trustworthy brand presence that
- reflects the organization’s independent and professional ethos. The logo
-design emphasizes clarity and symbolism relevant to Cyprus, while the business 
-card maintains a clean and professional aesthetic for both digital and print use.
-The accompanying web design ensures user-friendly navigation, 
-consistent branding, and a responsive interface, effectively communicating 
-the network’s values and purpose to its audience.
+            I designed a logo, business card, and website layout for the Independent Cyprus Network,
+            focusing on establishing a strong and cohesive visual identity.
+            The project aimed to create a modern and trustworthy brand presence that
+            reflects the organization’s independent and professional ethos.
+            The logo design emphasizes clarity and symbolism relevant to Cyprus,
+            while the business card maintains a clean and professional aesthetic
+            for both digital and print use. The accompanying web design ensures
+            user-friendly navigation, consistent branding, and a responsive interface,
+            effectively communicating the network’s values and purpose to its audience.
           </p>
         </div>
       </div>
@@ -67,8 +67,8 @@ the network’s values and purpose to its audience.
         }}
       >
         <img
-          src="/images/web.png"
-          alt="Home"
+          src={`${import.meta.env.BASE_URL}images/web.png`}
+          alt="Website Layout"
           style={{
             width: "100%",
             borderRadius: "16px",
@@ -76,8 +76,8 @@ the network’s values and purpose to its audience.
           }}
         />
         <img
-          src="/images/cardf.png"
-          alt="Leader"
+          src={`${import.meta.env.BASE_URL}images/cardf.png`}
+          alt="Business Card Front"
           style={{
             width: "100%",
             borderRadius: "16px",
@@ -85,8 +85,8 @@ the network’s values and purpose to its audience.
           }}
         />
         <img
-          src="/images/cardb.png"
-          alt="Rewards"
+          src={`${import.meta.env.BASE_URL}images/cardb.png`}
+          alt="Business Card Back"
           style={{
             width: "100%",
             borderRadius: "16px",
