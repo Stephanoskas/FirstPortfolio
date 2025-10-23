@@ -1,3 +1,5 @@
+import Feedback from "./Feedback";
+
 export default function ProjectB() {
   return (
     <section
@@ -43,14 +45,12 @@ export default function ProjectB() {
           <h1 style={{ fontSize: "2.4rem", marginBottom: "20px" }}>Project B</h1>
           <p style={{ lineHeight: "1.7", fontSize: "1.2rem" }}>
             I designed a logo, business card, and website layout for the Independent Cyprus Network,
-            focusing on establishing a strong and cohesive visual identity.
-            The project aimed to create a modern and trustworthy brand presence that
-            reflects the organization’s independent and professional ethos.
-            The logo design emphasizes clarity and symbolism relevant to Cyprus,
-            while the business card maintains a clean and professional aesthetic
-            for both digital and print use. The accompanying web design ensures
-            user-friendly navigation, consistent branding, and a responsive interface,
-            effectively communicating the network’s values and purpose to its audience.
+            focusing on establishing a strong and cohesive visual identity. The project aimed to create
+            a modern and trustworthy brand presence that reflects the organization’s independent and
+            professional ethos. The logo design emphasizes clarity and symbolism relevant to Cyprus,
+            while the business card maintains a clean and professional aesthetic for both digital and
+            print use. The accompanying web design ensures user-friendly navigation, consistent branding,
+            and a responsive interface, effectively communicating the network’s values and purpose to its audience.
           </p>
         </div>
       </div>
@@ -94,6 +94,9 @@ export default function ProjectB() {
           }}
         />
       </div>
+
+      {/* Like + Comment Section */}
+      <Feedback projectId="project-b" />
     </section>
   );
 }

@@ -1,3 +1,5 @@
+import Feedback from "./Feedback";
+
 export default function ProjectD() {
   return (
     <section
@@ -46,10 +48,10 @@ export default function ProjectD() {
             Convention Association) event hosted in Cyprus, working independently under the guidance 
             of my supervisor. Each logo explored a different creative direction while maintaining a 
             consistent focus on the event’s core identity. The designs were inspired by two key themes
-             — Cyprus, representing the island’s cultural and geographical identity, and tuna, symbolizing 
-             the region’s marine life and sustainability values. Through this project, I aimed to visually
-              merge tradition and nature with modern, professional aesthetics, creating logos that reflect
-               both local character and international significance.
+            — Cyprus, representing the island’s cultural and geographical identity, and tuna, symbolizing 
+            the region’s marine life and sustainability values. Through this project, I aimed to visually
+            merge tradition and nature with modern, professional aesthetics, creating logos that reflect
+            both local character and international significance.
           </p>
         </div>
       </div>
@@ -75,6 +77,9 @@ export default function ProjectD() {
           }}
         />
       </div>
+
+      {/* Like + Comment Section */}
+      <Feedback projectId="project-d" />
     </section>
   );
 }

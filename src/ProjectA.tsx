@@ -1,3 +1,5 @@
+import Feedback from "./Feedback";
+
 export default function ProjectA() {
   return (
     <section
@@ -42,13 +44,13 @@ export default function ProjectA() {
         <div style={{ flex: "1 1 500px", textAlign: "left" }}>
           <h1 style={{ fontSize: "2.4rem", marginBottom: "20px" }}>Project A</h1>
           <p style={{ lineHeight: "1.7", fontSize: "1.2rem" }}>
-            Our team of three developed a fully functional website using HTML, CSS, and JavaScript 
+            Our team of three developed a fully functional website using HTML, CSS, and JavaScript
             as part of a collaborative project with Wargaming, focusing on their title World of Tanks.
             The primary objective of the project was to re-engage former players who had stopped playing
-            the game by offering an interactive and visually appealing platform. The website includes key 
-            sections such as a Home page, a Leaderboard showcasing player rankings, a Tank Collection 
-            displaying detailed vehicle information, and a Rewards section designed to incentivize player 
-            return and participation. Overall, the project aimed to enhance user engagement and community 
+            the game by offering an interactive and visually appealing platform. The website includes key
+            sections such as a Home page, a Leaderboard showcasing player rankings, a Tank Collection
+            displaying detailed vehicle information, and a Rewards section designed to incentivize player
+            return and participation. Overall, the project aimed to enhance user engagement and community
             interaction through a modern, game-themed web experience consistent with Wargaming’s brand identity.
           </p>
         </div>
@@ -67,7 +69,7 @@ export default function ProjectA() {
       >
         <img
           src={`${import.meta.env.BASE_URL}images/Home.jpg`}
-          alt="Home"
+          alt="Home page"
           style={{
             width: "100%",
             borderRadius: "16px",
@@ -76,7 +78,7 @@ export default function ProjectA() {
         />
         <img
           src={`${import.meta.env.BASE_URL}images/Leader.jpg`}
-          alt="Leader"
+          alt="Leaderboard page"
           style={{
             width: "100%",
             borderRadius: "16px",
@@ -85,7 +87,7 @@ export default function ProjectA() {
         />
         <img
           src={`${import.meta.env.BASE_URL}images/Rewards.jpg`}
-          alt="Rewards"
+          alt="Rewards page"
           style={{
             width: "100%",
             borderRadius: "16px",
@@ -94,7 +96,7 @@ export default function ProjectA() {
         />
         <img
           src={`${import.meta.env.BASE_URL}images/Tanks.jpg`}
-          alt="Tanks"
+          alt="Tanks collection page"
           style={{
             width: "100%",
             borderRadius: "16px",
@@ -102,6 +104,9 @@ export default function ProjectA() {
           }}
         />
       </div>
+
+      {/* Like + Comments */}
+      <Feedback projectId="project-a" />
     </section>
   );
 }

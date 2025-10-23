@@ -1,3 +1,5 @@
+import Feedback from "./Feedback";
+
 export default function ProjectC() {
   return (
     <section
@@ -42,13 +44,13 @@ export default function ProjectC() {
         <div style={{ flex: "1 1 500px", textAlign: "left" }}>
           <h1 style={{ fontSize: "2.4rem", marginBottom: "20px" }}>Project C</h1>
           <p style={{ lineHeight: "1.7", fontSize: "1.2rem" }}>
-            I designed a commemorative logo and a set of home and away kits for APOEL FC 
+            I designed a commemorative logo and a set of home and away kits for APOEL FC
             Nicosia in celebration of the club’s 100-year anniversary. The project aimed to
-            honor APOEL’s rich history and heritage while introducing a modern visual identity 
+            honor APOEL’s rich history and heritage while introducing a modern visual identity
             that resonates with both long-time supporters and new generations. The anniversary
             logo incorporates symbolic elements from the club’s legacy, blending tradition with
             a contemporary design approach. The kit designs reflect the team’s iconic colors
-            and pride, featuring refined details and textures that pay tribute to a century 
+            and pride, featuring refined details and textures that pay tribute to a century
             of sporting excellence and unity.
           </p>
         </div>
@@ -102,6 +104,9 @@ export default function ProjectC() {
           }}
         />
       </div>
+
+      {/* Like + Comment Section */}
+      <Feedback projectId="project-c" />
     </section>
   );
 }
