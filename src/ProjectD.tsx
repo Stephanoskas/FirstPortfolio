@@ -40,12 +40,16 @@ export default function ProjectD() {
 
         {/* Right - Text */}
         <div style={{ flex: "1 1 500px", textAlign: "left" }}>
-          <h1 style={{ fontSize: "2.4rem", marginBottom: "20px" }}>Project A</h1>
+          <h1 style={{ fontSize: "2.4rem", marginBottom: "20px" }}>Project D</h1>
           <p style={{ lineHeight: "1.7", fontSize: "1.2rem" }}>
-            Περιγραφή του Project A. Εδώ μπορείς να εξηγήσεις τη διαδικασία, τα
-            εργαλεία που χρησιμοποίησες και το τελικό αποτέλεσμα. Μπορείς να
-            συμπεριλάβεις επίσης λεπτομέρειες για τη σχεδίαση, την ανάπτυξη και
-            τις προκλήσεις που αντιμετώπισες κατά τη διάρκεια του project.
+            I designed three distinct logo concepts for the ICCA (International Congress and 
+            Convention Association) event hosted in Cyprus, working independently under the guidance 
+            of my supervisor. Each logo explored a different creative direction while maintaining a 
+            consistent focus on the event’s core identity. The designs were inspired by two key themes
+             — Cyprus, representing the island’s cultural and geographical identity, and tuna, symbolizing 
+             the region’s marine life and sustainability values. Through this project, I aimed to visually
+              merge tradition and nature with modern, professional aesthetics, creating logos that reflect
+               both local character and international significance.
           </p>
         </div>
       </div>
@@ -53,7 +57,7 @@ export default function ProjectD() {
       {/* BOTTOM IMAGE SECTION */}
       <div
         style={{
-          marginTop: "40px",
+          marginTop: "70px",
           width: "100%",
           maxWidth: "900px",
           display: "flex",
