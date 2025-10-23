@@ -1,4 +1,4 @@
-export default function ProjectA() {
+export default function ProjectD() {
   return (
     <section
       style={{
@@ -27,7 +27,7 @@ export default function ProjectA() {
         {/* Left - Image */}
         <div style={{ flex: "1 1 300px", textAlign: "center" }}>
           <img
-            src="/images/top.png"
+            src={`${import.meta.env.BASE_URL}images/top.png`}
             alt="Project Illustration"
             style={{
               width: "100%",
@@ -50,7 +50,7 @@ export default function ProjectA() {
         </div>
       </div>
 
-      {/* VIDEO SECTION */}
+      {/* BOTTOM IMAGE SECTION */}
       <div
         style={{
           marginTop: "40px",
@@ -60,15 +60,15 @@ export default function ProjectA() {
           justifyContent: "center",
         }}
       >
-         <img
-            src="/images/btm.png"
-            alt="Project Illustration"
-            style={{
-              width: "100%",
-              maxWidth: "700px",
-              borderRadius: "16px",
-              boxShadow: "0 6px 15px rgba(0,0,0,0.25)",
-            }}
+        <img
+          src={`${import.meta.env.BASE_URL}images/btm.png`}
+          alt="Project Illustration Bottom"
+          style={{
+            width: "100%",
+            maxWidth: "700px",
+            borderRadius: "16px",
+            boxShadow: "0 6px 15px rgba(0,0,0,0.25)",
+          }}
         />
       </div>
     </section>

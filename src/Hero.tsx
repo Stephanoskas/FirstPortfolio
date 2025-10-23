@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 export default function Hero() {
   const [opacity, setOpacity] = useState(1);
 
-  // Fade out με scroll
+  // Fade out on scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const fadePoint = 600; 
+      const fadePoint = 600;
       const newOpacity = Math.max(0, 1 - scrollY / fadePoint);
       setOpacity(newOpacity);
     };
@@ -25,9 +25,9 @@ export default function Hero() {
         height: "100vh",
         display: "flex",
         alignItems: "center",
-        justifyContent: "flex-start", 
+        justifyContent: "flex-start",
         color: "#92736C",
-        backgroundImage: "url('background.jpg')",
+        backgroundImage: `url(${import.meta.env.BASE_URL}images/background.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -49,7 +49,7 @@ export default function Hero() {
         }}
       ></div>
 
-      {/* Κύριο κείμενο */}
+      {/* Main text */}
       <div
         style={{
           position: "relative",
@@ -63,13 +63,13 @@ export default function Hero() {
         <h2>Digital and UX/UI Designer</h2>
       </div>
 
-      {/* Scroll-down κείμενο στο κέντρο κάτω */}
+      {/* Scroll-down text */}
       <div
         style={{
           position: "absolute",
-          bottom: "2rem", 
+          bottom: "2rem",
           left: "50%",
-          transform: "translateX(-50%)", 
+          transform: "translateX(-50%)",
           zIndex: 1,
           opacity: opacity,
           transition: "opacity 0.3s ease-out",
