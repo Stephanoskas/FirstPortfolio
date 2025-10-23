@@ -27,7 +27,7 @@ export default function ProjectC() {
         {/* Left - Logo */}
         <div style={{ flex: "1 1 300px", textAlign: "center" }}>
           <img
-            src="/images/100.png"
+            src={`${import.meta.env.BASE_URL}images/100.png`}
             alt="Project Logo"
             style={{
               width: "100%",
@@ -40,16 +40,16 @@ export default function ProjectC() {
 
         {/* Right - Text */}
         <div style={{ flex: "1 1 500px", textAlign: "left" }}>
-          <h1 style={{ fontSize: "2.4rem", marginBottom: "20px" }}>Project A</h1>
+          <h1 style={{ fontSize: "2.4rem", marginBottom: "20px" }}>Project C</h1>
           <p style={{ lineHeight: "1.7", fontSize: "1.2rem" }}>
             I designed a commemorative logo and a set of home and away kits for APOEL FC 
-            Nicosia in celebration of the club’s 100-year anniversary.The project aimed to
-             honor APOEL’s rich history and heritage while introducing a modern visual identity 
-             that resonates with both long-time supporters and new generations. The anniversary
-              logo incorporates symbolic elements from the club’s legacy, blending tradition with
-               a contemporary design approach. The kit designs reflect the team’s iconic colors
-                and pride, featuring refined details and textures that pay tribute to a century 
-                of sporting excellence and unity.
+            Nicosia in celebration of the club’s 100-year anniversary. The project aimed to
+            honor APOEL’s rich history and heritage while introducing a modern visual identity 
+            that resonates with both long-time supporters and new generations. The anniversary
+            logo incorporates symbolic elements from the club’s legacy, blending tradition with
+            a contemporary design approach. The kit designs reflect the team’s iconic colors
+            and pride, featuring refined details and textures that pay tribute to a century 
+            of sporting excellence and unity.
           </p>
         </div>
       </div>
@@ -66,8 +66,8 @@ export default function ProjectC() {
         }}
       >
         <img
-          src="/images/HF.jpg"
-          alt="Home"
+          src={`${import.meta.env.BASE_URL}images/HF.jpg`}
+          alt="Home Kit Front"
           style={{
             width: "100%",
             borderRadius: "16px",
@@ -75,8 +75,8 @@ export default function ProjectC() {
           }}
         />
         <img
-          src="/images/HB.jpg"
-          alt="Leader"
+          src={`${import.meta.env.BASE_URL}images/HB.jpg`}
+          alt="Home Kit Back"
           style={{
             width: "100%",
             borderRadius: "16px",
@@ -84,8 +84,8 @@ export default function ProjectC() {
           }}
         />
         <img
-          src="/images/AF.jpg"
-          alt="Rewards"
+          src={`${import.meta.env.BASE_URL}images/AF.jpg`}
+          alt="Away Kit Front"
           style={{
             width: "100%",
             borderRadius: "16px",
@@ -93,8 +93,8 @@ export default function ProjectC() {
           }}
         />
         <img
-          src="/images/AB.jpg"
-          alt="Tanks"
+          src={`${import.meta.env.BASE_URL}images/AB.jpg`}
+          alt="Away Kit Back"
           style={{
             width: "100%",
             borderRadius: "16px",
