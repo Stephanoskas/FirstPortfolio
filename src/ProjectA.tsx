@@ -27,7 +27,7 @@ export default function ProjectA() {
         {/* Left - Logo */}
         <div style={{ flex: "1 1 300px", textAlign: "center" }}>
           <img
-            src="/images/Logo.png"
+            src={`${import.meta.env.BASE_URL}images/Logo.png`}
             alt="Project Logo"
             style={{
               width: "100%",
@@ -45,11 +45,11 @@ export default function ProjectA() {
             Our team of three developed a fully functional website using HTML, CSS, and JavaScript 
             as part of a collaborative project with Wargaming, focusing on their title World of Tanks.
             The primary objective of the project was to re-engage former players who had stopped playing
-             the game by offering an interactive and visually appealing platform. The website includes key 
-             sections such as a Home page, a Leaderboard showcasing player rankings, a Tank Collection 
-             displaying detailed vehicle information, and a Rewards section designed to incentivize player 
-             return and participation.Overall, the project aimed to enhance user engagement and community 
-             interaction through a modern, game-themed web experience consistent with Wargaming’s brand identity.
+            the game by offering an interactive and visually appealing platform. The website includes key 
+            sections such as a Home page, a Leaderboard showcasing player rankings, a Tank Collection 
+            displaying detailed vehicle information, and a Rewards section designed to incentivize player 
+            return and participation. Overall, the project aimed to enhance user engagement and community 
+            interaction through a modern, game-themed web experience consistent with Wargaming’s brand identity.
           </p>
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function ProjectA() {
         }}
       >
         <img
-          src="/images/Home.jpg"
+          src={`${import.meta.env.BASE_URL}images/Home.jpg`}
           alt="Home"
           style={{
             width: "100%",
@@ -75,7 +75,7 @@ export default function ProjectA() {
           }}
         />
         <img
-          src="/images/Leader.jpg"
+          src={`${import.meta.env.BASE_URL}images/Leader.jpg`}
           alt="Leader"
           style={{
             width: "100%",
@@ -84,7 +84,7 @@ export default function ProjectA() {
           }}
         />
         <img
-          src="/images/Rewards.jpg"
+          src={`${import.meta.env.BASE_URL}images/Rewards.jpg`}
           alt="Rewards"
           style={{
             width: "100%",
@@ -93,7 +93,7 @@ export default function ProjectA() {
           }}
         />
         <img
-          src="/images/Tanks.jpg"
+          src={`${import.meta.env.BASE_URL}images/Tanks.jpg`}
           alt="Tanks"
           style={{
             width: "100%",
