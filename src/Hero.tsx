@@ -27,7 +27,7 @@ export default function Hero() {
         alignItems: "center",
         justifyContent: "flex-start", 
         color: "#92736C",
-        backgroundImage: "url('/background.jpg')",
+        backgroundImage: "url('background.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

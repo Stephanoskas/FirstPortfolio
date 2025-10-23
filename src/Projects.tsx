@@ -39,10 +39,10 @@ export default function Projects() {
   };
 
   const projects = [
-    { to: "/projects/a", label: "Project A", img: "/images/Logo.png", scale: "85%" },
-    { to: "/projects/b", label: "Project B", img: "/images/vd.png", scale: "85%" },
-    { to: "/projects/c", label: "Project C", img: "/images/100.png", scale: "100%" },
-    { to: "/projects/d", label: "Project D", img: "/images/bbb.png", scale: "100%" },
+    { to: "/projects/a", label: "Project A", img: "images/Logo.png", scale: "85%" },
+    { to: "/projects/b", label: "Project B", img: "images/vd.png", scale: "85%" },
+    { to: "/projects/c", label: "Project C", img: "images/100.png", scale: "100%" },
+    { to: "/projects/d", label: "Project D", img: "images/bbb.png", scale: "100%" },
   ];
 
   return (
