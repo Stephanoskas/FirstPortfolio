@@ -1,10 +1,10 @@
 export default function Skills() {
   const skills = [
-    { name: "Illustrator", icon: "/illustrator.png", level: 90 },
-    { name: "Photoshop", icon: "/photoshop.png", level: 80 },
-    { name: "Figma", icon: "/figma.png", level: 70 },
-    { name: "Maya", icon: "/maya.png", level: 70 },
-    { name: "VS Code", icon: "/vscode.png", level: 60 },
+    { name: "Illustrator", icon: "images/illustrator.png", level: 90 },
+    { name: "Photoshop",  icon: "images/photoshop.png",  level: 80 },
+    { name: "Figma",      icon: "images/figma.png",      level: 70 },
+    { name: "Maya",       icon: "images/maya.png",       level: 70 },
+    { name: "VS Code",    icon: "images/vscode.png",     level: 60 },
   ];
 
   return (
@@ -28,7 +28,6 @@ export default function Skills() {
         }}
       >
         {skills.map((skill) => {
-
           const radius = 50;
           const circumference = 2 * Math.PI * radius;
           const offset = circumference - (skill.level / 100) * circumference;
@@ -43,10 +42,8 @@ export default function Skills() {
                 gap: "1rem",
               }}
             >
-              
               <div style={{ position: "relative", width: "120px", height: "120px" }}>
                 <svg width="120" height="120">
-                  
                   <circle
                     cx="60"
                     cy="60"
@@ -55,7 +52,6 @@ export default function Skills() {
                     strokeWidth="8"
                     fill="none"
                   />
-                  
                   <circle
                     cx="60"
                     cy="60"
@@ -69,7 +65,7 @@ export default function Skills() {
                     style={{ transition: "stroke-dashoffset 1s ease" }}
                   />
                 </svg>
-                
+
                 <img
                   src={skill.icon}
                   alt={skill.name}
@@ -82,8 +78,6 @@ export default function Skills() {
                   }}
                 />
               </div>
-              
-              
             </div>
           );
         })}
