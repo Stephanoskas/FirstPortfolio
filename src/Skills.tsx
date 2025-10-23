@@ -1,10 +1,10 @@
 export default function Skills() {
   const skills = [
-    { name: "Illustrator", icon: "images/illustrator.png", level: 90 },
-    { name: "Photoshop",  icon: "images/photoshop.png",  level: 80 },
-    { name: "Figma",      icon: "images/figma.png",      level: 70 },
-    { name: "Maya",       icon: "images/maya.png",       level: 70 },
-    { name: "VS Code",    icon: "images/vscode.png",     level: 60 },
+    { name: "Illustrator", icon: `${import.meta.env.BASE_URL}images/illustrator.png`, level: 90 },
+    { name: "Photoshop", icon: `${import.meta.env.BASE_URL}images/photoshop.png`, level: 80 },
+    { name: "Figma", icon: `${import.meta.env.BASE_URL}images/figma.png`, level: 70 },
+    { name: "Maya", icon: `${import.meta.env.BASE_URL}images/maya.png`, level: 70 },
+    { name: "VS Code", icon: `${import.meta.env.BASE_URL}images/vscode.png`, level: 60 },
   ];
 
   return (
