@@ -33,6 +33,7 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
         textAlign: "left",
         paddingLeft: "5rem",
+        boxSizing: "border-box", // ✅ FIX: prevents horizontal scroll
       }}
     >
       {/* Overlay fade */}

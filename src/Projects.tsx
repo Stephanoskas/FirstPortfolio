@@ -1,3 +1,4 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -38,12 +39,38 @@ export default function Projects() {
     el.style.boxShadow = "none";
   };
 
-  // ✅ Updated image paths for GitHub Pages
+  // ✅ Updated image paths for GitHub Pages + Project E
   const projects = [
-    { to: "/projects/a", label: "Project A", img: `${import.meta.env.BASE_URL}images/Logo.png`, scale: "85%" },
-    { to: "/projects/b", label: "Project B", img: `${import.meta.env.BASE_URL}images/vd.png`, scale: "85%" },
-    { to: "/projects/c", label: "Project C", img: `${import.meta.env.BASE_URL}images/100.png`, scale: "100%" },
-    { to: "/projects/d", label: "Project D", img: `${import.meta.env.BASE_URL}images/bbb.png`, scale: "100%" },
+    {
+      to: "/projects/a",
+      label: "Project A",
+      img: `${import.meta.env.BASE_URL}images/Logo.png`,
+      scale: "85%",
+    },
+    {
+      to: "/projects/b",
+      label: "Project B",
+      img: `${import.meta.env.BASE_URL}images/vd.png`,
+      scale: "85%",
+    },
+    {
+      to: "/projects/c",
+      label: "Project C",
+      img: `${import.meta.env.BASE_URL}images/100.png`,
+      scale: "100%",
+    },
+    {
+      to: "/projects/d",
+      label: "Project D",
+      img: `${import.meta.env.BASE_URL}images/bbb.png`,
+      scale: "100%",
+    },
+    {
+      to: "/projects/e",
+      label: "Project E",
+      img: `${import.meta.env.BASE_URL}images/imglogo.png`, 
+      scale: "100%",
+    },
   ];
 
   return (
