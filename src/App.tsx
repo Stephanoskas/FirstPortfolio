@@ -12,7 +12,10 @@ import ProjectA from "./ProjectA";
 import ProjectB from "./ProjectB";
 import ProjectC from "./ProjectC";
 import ProjectD from "./ProjectD";
-import ProjectE from "./ProjectE"; // ✅ NEW
+import ProjectE from "./ProjectE"; 
+
+
+import Blog from "./Blog";
 
 function App() {
   return (
@@ -42,6 +45,9 @@ function App() {
           <Route path="/projects/c" element={<ProjectC />} />
           <Route path="/projects/d" element={<ProjectD />} />
           <Route path="/projects/e" element={<ProjectE />} /> {/* ✅ NEW */}
+
+          {/* ✅ ΝΕΑ σελίδα Blog */}
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </main>
       <Footer />

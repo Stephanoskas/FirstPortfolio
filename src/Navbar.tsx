@@ -26,16 +26,17 @@ export default function Navbar() {
           boxShadow: "0 6px 20px rgba(0,0,0,0.5)",
         }}
       >
-        {/* These routes work everywhere */}
+        {/* Main Routes */}
         <Link to="/" style={{ color: "white", textDecoration: "none" }}>Home</Link>
-
-        {/* These scroll to sections on the homepage */}
         <Link to="/#skills" style={{ color: "white", textDecoration: "none" }}>Skills</Link>
         <Link to="/#about" style={{ color: "white", textDecoration: "none" }}>About</Link>
         <Link to="/#projects" style={{ color: "white", textDecoration: "none" }}>Projects</Link>
 
-        {/* Contact page */}
+        {/* Contact */}
         <Link to="/contact" style={{ color: "white", textDecoration: "none" }}>Contact</Link>
+
+        {/* NEW: Blog */}
+        <Link to="/blog" style={{ color: "white", textDecoration: "none" }}>Blog</Link>
       </div>
     </nav>
   );
