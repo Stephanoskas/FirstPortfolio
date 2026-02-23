@@ -7,13 +7,13 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
 
-// import τα project pages
+// Project pages
 import ProjectA from "./ProjectA";
 import ProjectB from "./ProjectB";
 import ProjectC from "./ProjectC";
 import ProjectD from "./ProjectD";
-import ProjectE from "./ProjectE"; 
-
+import ProjectE from "./ProjectE";
+import ProjectF from "./ProjectF"; // ✅ NEW
 
 import Blog from "./Blog";
 
@@ -23,7 +23,8 @@ function App() {
       <Navbar />
       <main>
         <Routes>
-          {/* Αρχική σελίδα */}
+
+          {/* Home Page */}
           <Route
             path="/"
             element={
@@ -36,18 +37,20 @@ function App() {
             }
           />
 
-          {/* Σελίδα Contact */}
+          {/* Contact Page */}
           <Route path="/contact" element={<Contact />} />
 
-          {/* Σελίδες Projects */}
+          {/* Project Pages */}
           <Route path="/projects/a" element={<ProjectA />} />
           <Route path="/projects/b" element={<ProjectB />} />
           <Route path="/projects/c" element={<ProjectC />} />
           <Route path="/projects/d" element={<ProjectD />} />
-          <Route path="/projects/e" element={<ProjectE />} /> {/* ✅ NEW */}
+          <Route path="/projects/e" element={<ProjectE />} />
+          <Route path="/projects/f" element={<ProjectF />} /> {/* ✅ NEW */}
 
-          {/* ✅ ΝΕΑ σελίδα Blog */}
+          {/* Blog Page */}
           <Route path="/blog" element={<Blog />} />
+
         </Routes>
       </main>
       <Footer />

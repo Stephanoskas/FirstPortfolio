@@ -39,7 +39,7 @@ export default function Projects() {
     el.style.boxShadow = "none";
   };
 
-  // ✅ Updated image paths for GitHub Pages + Project E
+  // ✅ Updated image paths for GitHub Pages + added Project F
   const projects = [
     {
       to: "/projects/a",
@@ -68,8 +68,16 @@ export default function Projects() {
     {
       to: "/projects/e",
       label: "Project E",
-      img: `${import.meta.env.BASE_URL}images/imglogo.png`, 
+      img: `${import.meta.env.BASE_URL}images/imglogo.png`,
       scale: "100%",
+    },
+
+    // ✅ NEW: Project F (PDF page)
+    {
+      to: "/projects/f",
+      label: "Project F",
+      img: `${import.meta.env.BASE_URL}images/pdf-icon.png`, // put pdf-icon.png in public/images
+      scale: "70%",
     },
   ];
 
