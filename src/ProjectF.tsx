@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 
 export default function ProjectF() {
-  // ✅ PDF location: my-app/public/pdfs/INTERACTION-ART.pdf
+  // PDF
   const pdfUrl = `${import.meta.env.BASE_URL}pdfs/INTERACTION-ART.pdf`;
+
+  // Video
+  const videoUrl = `${import.meta.env.BASE_URL}videos/Interactive_Algorithmic_Soundscape_Performance_25394525.mp4`;
 
   return (
     <div
@@ -14,7 +17,6 @@ export default function ProjectF() {
       }}
     >
       <div style={{ marginBottom: "18px" }}>
-        {/* Με HashRouter το πιο safe είναι να γυρνάμε στο Home */}
         <Link
           to="/"
           style={{
@@ -30,7 +32,31 @@ export default function ProjectF() {
       <h1 style={{ marginBottom: "10px", fontSize: "2.2rem" }}>Project F</h1>
 
       <p style={{ marginBottom: "18px", lineHeight: 1.6, opacity: 0.9 }}>
-        This project is presented as a PDF. You can preview it below or open it in a new tab.
+        Interactive Algorithmic Soundscape Performance. The video below shows the live
+        performance of the rule-based sound system implemented in Processing.
+      </p>
+
+      {/* VIDEO */}
+      <div
+        style={{
+          borderRadius: "14px",
+          overflow: "hidden",
+          boxShadow: "0 10px 22px rgba(0,0,0,0.12)",
+          background: "#000",
+          marginBottom: "28px",
+        }}
+      >
+        <video
+          controls
+          style={{ width: "100%", display: "block" }}
+        >
+          <source src={videoUrl} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <p style={{ marginBottom: "18px", lineHeight: 1.6, opacity: 0.9 }}>
+        This project is also documented in the following PDF report.
       </p>
 
       <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "18px" }}>
